@@ -1,16 +1,15 @@
 # What is it?
+Here is an implementation of the algorithm proposed in the article (On the orthogonal Grünbaum partition problem in dimension three). We recommend reading it first.
 
-This is an implementation of the algorithms proposed in the article (Article Title). We recommend reading it first.
-
-The implementation is given in a **Jupyter** notebook using **Sagemath**. In the first cell are the definitions of all functions. On the following are some examples of the use including tests with points generated randomly on a square and points generated in the moment curve.
+The implementation is given in a **Jupyter** notebook using **Sagemath**. In the first cell are the definitions of all functions. The notebook contains some usage examples, including tests with points generated randomly on a square and points generated in the moment curve.
 
 ## Usage
 
 ### Main example
 
-The use is really simple. You only need to provide the set of points to *find_partition* function and this one returns the first orthogonal equipartition found for that set or an empty list otherwise.
+The use is simple. You only need to provide the set of points to the *find_partition* function, and this one returns the first orthogonal equipartition found for that set or an empty list otherwise.
 
-This is an example of usage in which 10,000 randomly generated sets of 8 points each are tested.
+The next is a usage example that tests 10,000 randomly generated sets of 8 points to have an orthogonal equipartion.
 
 ```python
 #Size of sets to be tested.
@@ -38,7 +37,7 @@ print("Examples searched in general position:",totalexamples)
 print("Counterexamples found:",counterexamples)
 print(100.*counterexamples/totalexamples,'%')
 ```
-Notice that in this example the points are randomly generated in a square.
+Notice that in the example before, the points are randomly generated in a square.
 
 ### Util functions
 
